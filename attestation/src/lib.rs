@@ -167,10 +167,10 @@ pub fn verify_attestation(
         .try_into()
         .map_err(|_| eyre::eyre!("signature must be 65 bytes"))?;
 
-    let sig = alloy_primitives::PrimitiveSignature::from_bytes_and_parity(
+    let sig = alloy_primitives::Signature::from_bytes_and_parity(
         &sig_bytes[..64],
         sig_bytes[64] != 0,
-    )?;
+    );
 
     let recovered = sig.recover_address_from_prehash(&signing_hash)?;
     Ok(recovered == attestation.node_address)
