@@ -1,0 +1,29 @@
+[package]
+name    = "vrpc-node"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "vrpc-node"
+path = "src/main.rs"
+
+[dependencies]
+vrpc-attestation = { path = "../attestation" }
+vrpc-exex        = { path = "../exex" }
+vrpc-rpc         = { path = "../rpc" }
+
+reth             = { workspace = true }
+reth-node-ethereum = { workspace = true }
+reth-node-api    = { workspace = true }
+reth-tracing     = { workspace = true }
+reth-primitives  = { workspace = true }
+
+alloy-primitives = { workspace = true }
+alloy-signer-local = { workspace = true }
+
+tokio            = { workspace = true }
+eyre             = { workspace = true }
+tracing          = { workspace = true }
+clap             = { workspace = true }
+serde            = { workspace = true }
+hex              = { workspace = true }

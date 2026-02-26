@@ -1,0 +1,13 @@
+[profile.default]
+src         = "src"
+out         = "out"
+libs        = ["lib"]
+test        = "test"
+script      = "script"
+solc        = "0.8.24"
+optimizer   = true
+optimizer_runs = 1_000_000
+via_ir      = true
+
+[profile.default.fuzz]
+runs = 10_000

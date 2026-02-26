@@ -1,0 +1,24 @@
+[package]
+name    = "vrpc-rpc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+vrpc-attestation  = { path = "../attestation" }
+vrpc-exex         = { path = "../exex" }
+
+reth-provider     = { workspace = true }
+reth-trie         = { workspace = true }
+reth-trie-common  = { workspace = true }
+reth-primitives   = { workspace = true }
+
+alloy-primitives  = { workspace = true }
+alloy-rpc-types   = { workspace = true }
+alloy-eips        = { workspace = true }
+
+jsonrpsee         = { workspace = true }
+dashmap           = { workspace = true }
+tokio             = { workspace = true }
+eyre              = { workspace = true }
+tracing           = { workspace = true }
+serde             = { workspace = true }

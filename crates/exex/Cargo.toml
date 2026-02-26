@@ -1,0 +1,30 @@
+[package]
+name    = "vrpc-exex"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+vrpc-attestation    = { path = "../attestation" }
+
+reth-exex           = { workspace = true }
+reth-node-api       = { workspace = true }
+reth-primitives     = { workspace = true }
+reth-execution-types = { workspace = true }
+reth-tracing        = { workspace = true }
+
+alloy-primitives    = { workspace = true }
+alloy-signer-local  = { workspace = true }
+alloy-provider      = { workspace = true }
+alloy-network       = { workspace = true }
+alloy-sol-types     = { workspace = true }
+
+tokio               = { workspace = true }
+futures             = { workspace = true }
+dashmap             = { workspace = true }
+eyre                = { workspace = true }
+tracing             = { workspace = true }
+serde               = { workspace = true }
+
+[dev-dependencies]
+reth-exex-test-utils = { workspace = true }
+reth-execution-types = { workspace = true }
