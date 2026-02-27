@@ -6,7 +6,7 @@ I've been trying to get your attention for a while now. Built things across the 
 
 I asked myself: *what is the single most important unsolved problem in the Reth ecosystem right now, the one that, if fixed, changes the trajectory of the whole project?*
 
-And I think it's this: **Reth is the fastest, most modular Ethereum client ever built — and yet every user who relies on it is trusting a centralized intermediary to relay its answers.** Infura. Alchemy. QuickNode. They take Reth's work and become the single point of failure between the chain and the user. Reth does the hard part, they capture the economic value, and the node operator earns nothing.
+And I think it's this: **Reth is the fastest, most modular Ethereum client ever built — and yet every user who relies on it is trusting a centralized intermediary to relay its answers.** Data Providers. They take Reth's work and become the single point of failure between the chain and the user. Reth does the hard part, they capture the economic value, and the node operator earns nothing.
 
 That's the gap. So I built the bridge.
 
